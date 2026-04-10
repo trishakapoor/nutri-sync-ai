@@ -41,3 +41,14 @@ User Accuracy: It is assumed the user provides an accurate BMI for the safety lo
 Equipment: The AI assumes basic kitchen tools and household items (like chairs or water bottles) are available for "at-home" routines.
 
 Consultation: While the logic is safety-first, it is assumed users will consult a physician before starting new intense regimens.
+
+ Tech Stack & Google Cloud Integration
+* **Google Gemini 1.5 Flash:** Core LLM for personalized health insights.
+* **Google Cloud Run:** Production-grade serverless deployment.
+* **Google Artifact Registry:** Container management and versioning.
+* **FastAPI:** High-performance asynchronous backend.
+
+Security & Accessibility
+* **Environment Secrets:** API keys are injected via Cloud Run secrets, never hardcoded.
+* **Semantic HTML:** Frontend uses ARIA labels and semantic tags for screen-reader accessibility.
+* **Pydantic Validation:** Strict schema enforcement for all user inputs.
